@@ -44,19 +44,19 @@ A modern, mobile-responsive portfolio built using **React 18+**, **Material UI (
 ## 🖼️ Page Previews
 
 ### 🏠 Home
-![Home](./public/assets/readme/home.png)
+![Home](./public/assets/readme/home.PNG)
 
 ### 💼 Projects
-![Projects](./public/assets/readme/projects.png)
+![Projects](./public/assets/readme/projects.PNG)
 
 ### 🎓 Education
-![Education](./public/assets/readme/education.png)
+![Education](./public/assets/readme/education.PNG)
 
 ### 📧 Contact
-![Contact](./public/assets/readme/contact.png)
+![Contact](./public/assets/readme/contact.PNG)
 
 ### 💡 Skills
-![Skills](./public/assets/readme/skills.png)
+![Skills](./public/assets/readme/skills.PNG)
 
 ---
 

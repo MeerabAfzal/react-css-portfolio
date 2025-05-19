@@ -1,0 +1,127 @@
+.container {
+    margin-left: 280px;
+    padding: 2rem;
+    transition: margin 0.3s ease;
+  }
+  
+  .pageTitle {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #3e2f1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .titleIcon {
+    margin-right: 0.5rem;
+    color: #6d4c41;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .formGroup {
+    width: 100%;
+  }
+  
+  .textField {
+    width: 100%;
+  }
+  
+  .textField .MuiOutlinedInput-root {
+    border-color: #3e2f1c;
+  }
+  
+  .textField .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #6d4c41;
+  }
+  
+  .inputIcon {
+    color: #6d4c41;
+  }
+  
+  .messageField {
+    min-height: 120px;
+  }
+  
+  .submitButton {
+    background-color: #3e2f1c !important;
+    color: white !important;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    align-self: center;
+  }
+  
+  .submitButton:hover {
+    background-color: #6d4c41 !important;
+  }
+  
+  .successMessage {
+    color: #2e7d32;
+    text-align: center;
+    margin-top: 1rem;
+    animation: slideUp 0.3s ease-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 900px) {
+    .container {
+      margin-left: 0;
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .pageTitle {
+      font-size: 1.75rem;
+    }
+  
+    .textField {
+      font-size: 0.875rem;
+    }
+  
+    .messageField {
+      min-height: 100px;
+      rows: 3;
+    }
+  
+    .submitButton {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }

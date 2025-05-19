@@ -1,0 +1,109 @@
+.container {
+    min-height: 100vh;
+    transition: margin 0.3s ease;
+  }
+  
+  .pageTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700 !important;
+    color: var(--primary-color);
+  }
+  
+  .gridWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 12px !important;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    max-width: 100%;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  .cardMedia {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .card:hover .cardMedia {
+    transform: scale(1.05);
+  }
+  
+  .cardContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem !important;
+  }
+  
+  .tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tag {
+    background-color: #f0e6dd;
+    color: #6d4c41;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .linksContainer {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+  }
+  
+  .projectButton {
+    color: #6d4c41 !important;
+    border-color: #d2b48c !important;
+  }
+  
+  .projectButton:hover {
+    background-color: rgba(210, 180, 140, 0.1) !important;
+    border-color: #a9745f !important;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 900px) {
+    .container {
+      margin-left: 0 !important;
+    }
+    
+    .gridWrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 1rem !important;
+    }
+    
+    .pageTitle {
+      font-size: 1.75rem !important;
+    }
+    
+    .cardContent {
+      padding: 1rem !important;
+    }
+  }
